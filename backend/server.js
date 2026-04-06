@@ -18,11 +18,9 @@ const io = socketIo(server, {
 app.use(cors());
 app.use(express.json());
 
-// MongoDB Connection
-mongoose.connect(process.env.MONGODB_URL|| 'mongodb://localhost:27017/chatapp')
-.then(() => console.log('MongoDB connected'))
-.catch(err => console.error('MongoDB connection error:', err));
-
+mongoose.connect("mongodb+srv://hemak8375_db_user:eknbtEQ5erATcngV@cluster0.mnbj2xj.mongodb.net/chatapp?appName=Cluster0")
+  .then(() => console.log("MongoDB connected"))
+  .catch(err => console.error("MongoDB error:", err));
 // Message Schema
 const messageSchema = new mongoose.Schema({
   content: {
