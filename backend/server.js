@@ -205,6 +205,7 @@ io.on('connection', (socket) => {
     console.log('User disconnected:', socket.id);
   });
 });
+console.log("DEPLOY TEST");
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
