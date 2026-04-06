@@ -10,7 +10,7 @@
     }
   ],
   "env": {
-    "REACT_APP_API_URL": "@backend_url",
-    "REACT_APP_SOCKET_URL": "@backend_url"
+    "REACT_APP_API_URL": "https://chatapp-csao.onrender.com",
+    "REACT_APP_SOCKET_URL": "https://chatapp-csao.onrender.com"
   }
 }
