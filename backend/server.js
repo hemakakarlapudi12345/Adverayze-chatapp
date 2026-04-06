@@ -13,7 +13,7 @@ const io = socketIo(server, {
     methods: ["GET", "POST"]
   }
 });
-
+console.log("HELLO DEPLOY");
 // Middleware
 app.use(cors());
 app.use(express.json());
